@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P6-TM02B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 2B 6to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje</strong>
+                                    <ul>
+                                        <li>Que los estudiantes implementen en equipo su "Plan de Navegación" en el robot XGO. Que ejecuten y depuren las secuencias de marcha, observando la diferencia entre walk y trot. El objetivo principal es que aprendan a afinar (calibrar) los parámetros de tiempo y velocidad para lograr que el robot complete una ruta de la manera más precisa posible.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase</strong>
+                                    <ul>
+                                        <li>⚡Bienvenida y Conexión</li>
+                                        <li>⚡IMPLEMENTACIÓN DEL CÓDIGO (Ejecución)</li>
+                                        <li>⚡PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO</li>
+                                        <li>⚡GNIUS STORM Y REINICIO DEL CICLO</li>
+                                    </ul>
+                                    <strong>Entregable Clave</strong>
+                                    <ul>
+                                        <li>Robot XGO ejecutando una ruta calibrada y precisa, demostrada por cada equipo.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso al entorno de programación Python en las computadoras.</li>
+                                        <li>Robots XGO V2 (1 por cada 4 estudiantes), cargados y listos para conectar.</li>
+                                        <li>Los Planes de Navegación creados por cada equipo en la Sesión 2A.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                        <li>Chat de Agente Gnius (Xolo) activo para consultas de debugging.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna)</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y que el entorno Python funcione.</li>
+                                                <li>Asegurar que los robots XGO V2 estén completamente cargados.</li>
+                                                <li>Tener la presentación de diapositivas lista.</li>
+                                                <li>Probar el chat Agente Gnius (Xolo) para consultas.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad práctica.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Bienvenida y Conexión ⏰ 2 minutos</h2>
+                <p><strong>Propósito:</strong> Recordar el trabajo previo, establecer el objetivo del día y preparar el entorno de trabajo para la sesión práctica.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Conexión con Sesión A ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida, recuérdales el trabajo de diseño de la Sesión A y crea expectación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola de nuevo, ingenieros! ¡Bienvenidos a la Sesión B! En la clase pasada diseñaron unos 'Planes de Navegación' impresionantes. Hoy es el día de convertir esos mapas en movimiento real. ¿Listos para ver si sus rutas son precisas?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Guía de Conexión y Preparación ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 3) Guía a los equipos para que se preparen técnicamente para la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Equipos, es hora de poner a prueba sus planes. Conecten sus robots XGO y abran su 'Plan de Navegación'. ¡Vamos a ver si esos mapas son precisos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: IMPLEMENTACIÓN DEL CÓDIGO (Ejecución) ⏰ 13 minutos</h2>
+                <p><strong>Propósito</strong> Poner en práctica el plan creado en la Sesión A, ejecutando el código en el robot físico y comparando el resultado real con el esperado.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Prueba de la Ruta 1 ("Ruta Cuadrada") ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Guía a los equipos para que ejecuten el primer código de su plan, enfocándose en el ciclo de predicción y observación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora que están listos, vamos con la Prueba 1. Carguen el código de la "Ruta Cuadrada". Antes de ejecutar, predigan en equipo: "Ok, ahora el robot debería avanzar, parar, girar 90 grados, parar, y repetir...". Ahora sí, ejecuten el código y observen atentamente el recorrido. ¿Es realmente un cuadrado? ¿Los giros son correctos?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Prueba de la Ruta 2 ("Sprint y Reversa") ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Guía a los equipos para que repitan el proceso con la segunda ruta, enfocando la observación en la diferencia entre los tipos de marcha.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Perfecto. Ahora, carguen el segundo código, "Sprint y Reversa". Repitan el proceso de predicción y ejecución. Esta vez, pongan mucha atención en esto: ¿Notan la diferencia en el movimiento entre `walk` y `trot`? ¿Cuál parece más rápido? ¿Cuál más estable? Comenten en su equipo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO ⏰ 15 minutos</h2>
+                <p><strong>Propósito</strong> Introducir a los estudiantes al proceso de calibración, enseñándoles a identificar problemas de precisión y a ajustar parámetros para resolverlos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción a la Calibración ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Introduce el concepto de calibración como una forma avanzada de debugging, esencial en robótica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, ingenieros! Es muy probable que sus rutas no salieran perfectas. ¡Eso es normal! Ahora empieza el trabajo de un verdadero ingeniero de robótica: la calibración. Calibrar es ajustar finamente los números de nuestro código para que el robot se mueva con la precisión que queremos. ¡Es como afinar una guitarra!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ciclo de Depuración - Calibración de Giro ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Guía a los equipos a través de un escenario de calibración de giro para que aprendan a hacerlo por prueba y error.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant"><strong>Problema:</strong> "¡Nuestra 'Ruta Cuadrada' parece más un círculo! El robot no gira lo suficiente." (O, "¡Gira demasiado!").</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "El problema está en el `time.sleep()` después del comando de giro. Necesitamos ajustarlo."</p>
+                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> "Xolo, ¿cómo podemos hacer que el giro sea exactamente de 90 grados?"</p>
+                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Ese es el desafío de la calibración! No hay un número perfecto que funcione siempre. Depende de la velocidad de giro que programaron y de la superficie. Les recomiendo un método de prueba y error: empiecen con `time.sleep(1.5)`, observen, y si gira poco, prueben con 1.7. Si gira mucho, prueben con 1.3. ¡Están calibrando su robot como verdaderos ingenieros!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Ciclo de Depuración - Comando Faltante ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Guía a los estudiantes a través de un error lógico común: olvidar el comando `stop()`.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant"><strong>Problema:</strong> "El robot empieza a caminar y no se detiene nunca."</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "Creo que nos falta un comando al final."</p>
+                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> "Xolo, nuestro robot no para de caminar después de la ruta. ¿Por qué?"</p>
+                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Excelente observación! Los comandos como `xgo.walk()` o `xgo.trot()` le dicen al robot 'empieza a moverte y no pares hasta que te diga lo contrario'. La orden para 'lo contrario' es `xgo.stop()`. ¡Asegúrense de ponerla siempre al final de cada ruta!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Implementación del Desafío de Precisión ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Anima a los equipos a intentar el desafío más complejo de su plan, aplicando sus nuevas habilidades de calibración.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora que son expertos en calibración, ¡vamos por el "Desafío de Precisión" de su plan! Intenten hacer que el robot vaya y vuelva al punto de partida. Apliquen lo que aprendieron sobre la calibración de los tiempos de giro y avance para que la ruta sea lo más exacta posible. Recuerden alternar quién programa para que todos tengan la oportunidad de calibrar el robot.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: GNIUS STORM Y REINICIO DEL CICLO ⏰ 10 minutos</h2>
+                <p><strong>Propósito</strong> Celebrar los logros en calibración, compartir aprendizajes clave y fomentar la mentalidad de mejora continua.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Facilita un espacio para que los equipos muestren sus rutas calibradas y compartan sus descubrimientos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo de Gnius STORM! Cada equipo, prepárese para mostrar la ruta que lograron calibrar mejor. ¡Queremos ver esos "cuadrados perfectos"! Y lo más importante, compartan un aprendizaje clave de depuración: "Descubrimos que para girar 90 grados a una velocidad de -30, necesitábamos un `time.sleep` de exactamente 1.6 segundos." o "Al principio se nos olvidaba `xgo.stop()` y el robot seguía caminando contra la pared."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Reinicio del Ciclo ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) Lanza un mini-desafío para aplicar las habilidades de calibración en un nuevo problema.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Han hecho un trabajo fantástico de calibración! Ahora sus robots se mueven con mucha más precisión. Con el tiempo que nos queda, ¿qué nuevo desafío se les ocurre? ¿Podrían programar al robot para que dibuje un triángulo? ¿O una ruta en forma de 'L'? Usen lo que aprendieron sobre los tiempos y `xgo.stop()` para diseñar y probar una nueva ruta ahora mismo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
