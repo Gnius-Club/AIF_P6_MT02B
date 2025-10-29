@@ -64,31 +64,27 @@
                                 <td>
                                     <strong>Objetivos de Aprendizaje</strong>
                                     <ul>
-                                        <li>Al final de la sesión, los estudiantes podrán:
-                                            <ul>
-                                                <li>Programar rutas específicas (zigzag, cuadrado, línea recta).</li>
-                                                <li>Realizar pruebas para ajustar parámetros y lograr recorridos precisos.</li>
-                                                <li>Aprender a refinar tiempos y solucionar errores de lógica.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Objetivo General de la Sesión:</strong> Que los estudiantes implementen secuencias de movimiento complejas y dominen el ajuste de parámetros.</li>
+                                        <li>Entender el funcionamiento del <strong>balance dinámico</strong> en robots cuadrúpedos.</li>
+                                        <li>Analizar cómo el <strong>centro de gravedad</strong> afecta la <strong>estabilidad</strong>.</li>
+                                        <li>Aplicar cambios en <strong>altura del cuerpo</strong> para pruebas experimentales.</li>
+                                        <li>Identificar patrones de <strong>autoajuste</strong> como ejemplos de <strong>IA reactiva</strong>.</li>
                                     </ul>
                                     <h4>Vocabulario Clave:</h4>
                                     <ul>
-                                      <li><b>Calibrar (ca-li-brar):</b> Ajustar finamente los parámetros (como el tiempo o la velocidad) para que el movimiento sea preciso.</li>
-                                      <li><b>Precisión (pre-ci-sión):</b> La cualidad de ser exacto. Que el robot haga exactamente lo que se le programó.</li>
-                                      <li><b>Parámetros (pa-rá-me-tros):</b> Los valores numéricos que modifican un comando.</li>
+                                      <li><b>Balance Dinámico:</b> La habilidad del robot para mantenerse estable mientras está en movimiento o es perturbado.</li>
+                                      <li><b>Centro de Gravedad:</b> El punto imaginario donde se concentra el peso de un objeto. Bajarlo aumenta la estabilidad.</li>
+                                      <li><b>IA Reactiva:</b> Un tipo de inteligencia artificial que responde a estímulos en tiempo real sin un plan complejo.</li>
                                     </ul>
                                     <strong>Secuencia de Clase</strong>
                                     <ul>
                                         <li>⚡Bienvenida y Conexión</li>
-                                        <li>⚡IMPLEMENTACIÓN DEL CÓDIGO (Ejecución)</li>
-                                        <li>⚡PRUEBAS, OBSERVACIÓN Y CALIBRACIÓN</li>
-                                        <li>⚡GNIUS STORM Y REINICIO DEL CICLO</li>
+                                        <li>⚡A.I. GYM (Análisis del Balance)</li>
+                                        <li>⚡EXPERIMENTO DE ESTABILIDAD</li>
+                                        <li>⚡GNIUS STORM Y ANÁLISIS DE RESULTADOS</li>
                                     </ul>
                                     <strong>Entregable Clave</strong>
                                     <ul>
-                                        <li>Robot XGO ejecutando una ruta calibrada y precisa, demostrada por cada equipo.</li>
+                                        <li>Observaciones documentadas sobre cómo la altura afecta la estabilidad del robot.</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -98,9 +94,9 @@
                                         <li>Conexión a internet estable.</li>
                                         <li>Acceso al entorno de programación Python en las computadoras.</li>
                                         <li>Robots XGO V2 (1 por cada 4 estudiantes), cargados y listos para conectar.</li>
-                                        <li>Los Planes de Navegación creados por cada equipo en la sesión pasada.</li>
+                                        <li>Superficie ligeramente irregular o una tabla pequeña para pruebas de balance.</li>
                                         <li>Presentación de diapositivas.</li>
-                                        <li>Chat de Agente Gnius (Xolo) activo para consultas de debugging y calibración.</li>
+                                        <li>Chat de Agente Gnius (Xolo) activo para consultas.</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión</strong>
                                     <ol>
@@ -109,10 +105,10 @@
                                                 <li>Verificar conexión a internet y que el entorno Python funcione.</li>
                                                 <li>Asegurar que los robots XGO V2 estén completamente cargados.</li>
                                                 <li>Tener la presentación de diapositivas lista.</li>
-                                                <li>Probar el chat Agente Gnius (Xolo) para consultas.</li>
+                                                <li>Probar el chat Agente Gnius (Xolo) para consultas sobre estabilidad.</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Familiarización</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad práctica.</li>
+                                        <li><strong>Familiarización</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -123,17 +119,17 @@
             
             <div class="activity-card" id="activity-1">
                 <h2>⚡ Actividad 1: Bienvenida y Conexión ⏰ 2 minutos</h2>
-                <p><strong>Propósito:</strong> Recordar el trabajo previo, establecer el objetivo del día y preparar el entorno de trabajo para la sesión práctica.</p>
+                <p><strong>Propósito:</strong> Establecer el objetivo del día centrado en el balance y preparar el entorno de trabajo.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Conexión con la sesión pasada ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) Da la bienvenida, recuérdales el trabajo de diseño de la sesión pasada y crea expectación.</p>
+                            <h3>Paso 1: Bienvenida y Planteamiento del Problema ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida y presenta el concepto de estabilidad de una forma relatable.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Bienvenidos de nuevo, ingenieros! ¿Recuerdan que en la sesión pasada diseñamos nuestros <strong>Planes de Navegación</strong>? ¡Hoy les daremos vida y los haremos perfectos!</p>
+                                <p class="dialogue assistant">¡Bienvenidos de nuevo, científicos de robótica! ¿Alguna vez han visto a un luchador de sumo? Toman una postura baja y ancha para ser súper estables. ¿Por qué funciona eso? Hoy vamos a investigar exactamente eso, pero con nuestro robot XGO.</p>
                             </div>
                         </div>
                     </div>
@@ -145,7 +141,7 @@
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Excelente! Equipos, es hora de poner a prueba sus planes. Conecten sus robots XGO y abran su 'Plan de Navegación'. Pídanle a Xolo: <strong>"Mi perfil es [escribe aquí tu perfil] y quiero que me ayudes a implementar y hacer debugging de mi código para programar rutas como zigzag o un cuadrado con el robot XGO. Este es mi código de la sesión pasada: [escribe aquí tu código]."</strong></p>
+                                <p class="dialogue assistant">¡Excelente! Equipos, conecten sus robots XGO y abran su entorno de programación. Hoy no necesitamos planes previos, vamos a realizar un experimento en vivo para descubrir los secretos del <strong>balance dinámico</strong>.</p>
                             </div>
                         </div>
                     </div>
@@ -153,31 +149,32 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: IMPLEMENTACIÓN DEL CÓDIGO (Ejecución) ⏰ 13 minutos</h2>
-                <p><strong>Propósito</strong> Poner en práctica el plan creado en la sesión pasada, ejecutando el código en el robot físico y comparando el resultado real con el esperado.</p>
+                <h2>⚡ Actividad 2: A.I. GYM (Análisis del Balance) ⏰ 13 minutos</h2>
+                <p><strong>Propósito</strong> Introducir los conceptos de balance dinámico, centro de gravedad e IA reactiva.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Prueba de la Ruta 1 (Ej. "Ruta Cuadrada") ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) Guía a los equipos para que ejecuten el primer código de su plan, enfocándose en el ciclo de predicción y observación.</p>
+                            <h3>Paso 1: Presentación Conceptual y Comando para Xolo ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Explica la idea de auto-corrección y guía a los equipos para que consulten a Xolo.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Proyecta el video de ejemplo '¡Veamos cómo se ve en acción!' para que los estudiantes puedan visualizar el objetivo final.</p>
-                                <p class="dialogue assistant">Ahora que están listos, vamos con la <strong>Prueba 1</strong>. Carguen el código de su primera ruta compleja, por ejemplo, la <strong>"Ruta Cuadrada"</strong>. Antes de ejecutar, predigan en equipo: "Ok, ahora el robot debería avanzar, parar, girar 90 grados, parar, y repetir...". Ahora sí, ejecuten el código y observen atentamente el recorrido. ¿Es realmente un cuadrado? ¿Los giros son <strong>precisos</strong>?</p>
+                                <p class="dialogue assistant">¡Muy bien, vamos al <strong>A.I. GYM</strong>! Piensen en cómo caminan sobre un terreno irregular. No piensan en cada músculo que mueven, su cuerpo simplemente reacciona y se ajusta para no caerse. Eso es una forma de <strong>balance dinámico</strong>. El XGO tiene un modo especial para hacer exactamente eso.</p>
+                                <p class="dialogue assistant">Para entender cómo funciona, vamos a preguntarle a nuestro experto. Escriban en el chat: <strong>"Xolo, mi perfil es [escribe aquí tu perfil] y quiero descubrir cómo un robot puede estabilizarse automáticamente. Quiero aprender qué significa el modo de balance dinámico y cómo la altura del cuerpo influye en la estabilidad. Enséñame el código en Python para activar el balance y probar diferentes alturas, observando cómo el robot corrige su postura."</strong></p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Prueba de la Ruta 2 (Ej. "Ruta Zigzag") ⏰ 7 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Guía a los equipos para que repitan el proceso con la segunda ruta, enfocando la observación en la fluidez y la precisión de los movimientos.</p>
+                            <h3>Paso 2: Síntesis y Discusión ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Facilita una discusión basada en la explicación de Xolo, reforzando los conceptos clave.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Perfecto. Ahora, carguen el segundo código, por ejemplo, la <strong>"Ruta en Zigzag"</strong>. Repitan el proceso de <strong>predicción y ejecución</strong>. Esta vez, pongan mucha atención en la <strong>continuidad del movimiento</strong>. ¿Los cambios de dirección son fluidos? ¿El robot mantiene la velocidad esperada? Comenten en su equipo.</p>
+                                <p class="dialogue assistant">¡Excelente! Como Xolo les está mostrando, el comando <strong>`xgo.balance_mode(True)`</strong> activa la <strong>IA reactiva</strong> del robot. Esto significa que el robot usará constantemente sus sensores para corregir su postura, ¡sin que se lo pidamos!</p>
+                                <p class="dialogue assistant">Xolo también mencionó algo muy importante: el <strong>centro de gravedad</strong>. Como los luchadores de sumo, si bajamos la altura del cuerpo del robot con <strong>`xgo.body_height()`</strong>, bajamos su centro de gravedad y lo hacemos más estable. ¡Hoy vamos a probar esa teoría!</p>
                             </div>
                         </div>
                     </div>
@@ -185,60 +182,58 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: PRUEBAS, OBSERVACIÓN Y CALIBRACIÓN ⏰ 15 minutos</h2>
-                <p><strong>Propósito</strong> Introducir a los estudiantes al proceso de calibración, enseñándoles a identificar problemas de precisión y a ajustar parámetros para resolverlos.</p>
+                <h2>⚡ Actividad 3: EXPERIMENTO DE ESTABILIDAD ⏰ 15 minutos</h2>
+                <p><strong>Propósito</strong> Realizar un experimento práctico para observar cómo la altura del cuerpo afecta la capacidad del robot para mantener el balance.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Introducción a la Calibración ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) Introduce el concepto de calibración como una forma avanzada de debugging, esencial en robótica.</p>
+                            <h3>Paso 1: Prueba con Altura Normal ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Guía a los equipos para ejecutar la primera parte del experimento.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Muy bien, ingenieros! Es muy probable que las rutas no salgan perfectas a la primera. ¡Y eso es excelente! No se frustren, es el verdadero trabajo de un ingeniero de robótica: la <strong>calibración</strong>. <strong>Calibrar</strong> es <strong>ajustar finamente los parámetros</strong> de nuestro código para que el robot se mueva con la <strong>precisión</strong> que queremos. ¡Es como afinar una guitarra para que suene perfecto!</p>
+                                <p class="dialogue assistant">¡Manos a la obra! Primero, vamos a establecer nuestra base. Carguen este código:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">import xgo, time
+xgo.balance_mode(True)
+print("Modo balance activado. Empujen suavemente al robot.")
+time.sleep(10) # 10 segundos para experimentar
+xgo.balance_mode(False)
+print("Experimento terminado.")</pre>
+                                <p class="dialogue assistant">Ejecútenlo y, mientras corre, empujen <strong>suavemente</strong> al robot por los lados. Observen y anoten: ¿Cómo reacciona? ¿Cómo se mueven sus patas para compensar? ¿Es fácil o difícil de desequilibrar?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Ciclo de Depuración - Calibración de Giro ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Guía a los equipos a través de un escenario de calibración de giro para que aprendan a hacerlo por prueba y error.</p>
+                            <h3>Paso 2: Prueba con Altura Baja ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Guía a los equipos para modificar el código y probar la hipótesis del centro de gravedad.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>Problema:</strong> "¡Nuestra 'Ruta Cuadrada' parece más un rombo! El robot no gira exactamente 90 grados."</p>
-                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "El problema está en el <strong>`time.sleep()`</strong> después del comando de giro. Necesitamos ajustarlo."</p>
-                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> <strong>"Xolo, ¿cómo podemos hacer que el giro sea exactamente de 90 grados?"</strong></p>
-                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Ese es el desafío de la <strong>calibración</strong>! No hay un número mágico. Depende de la velocidad de giro y de la superficie. Les recomiendo un método de <strong>prueba y error</strong>: empiecen con <strong>`time.sleep(1.5)`</strong>, observen, y si gira poco, prueben con 1.7. Si gira mucho, prueben con 1.3. ¡Están <strong>calibrando</strong> su robot como verdaderos ingenieros!"</p>
+                                <p class="dialogue assistant">¡Excelente observación! Ahora, vamos a probar nuestra hipótesis. Modifiquen el código para bajar el <strong>centro de gravedad</strong>. Así:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">import xgo, time
+xgo.body_height(-30) # ¡Bajamos el cuerpo!
+time.sleep(1)
+xgo.balance_mode(True)
+print("Modo balance activado con altura baja. Empujen de nuevo.")
+time.sleep(10)
+xgo.balance_mode(False)
+xgo.body_height(0) # Volver a la normalidad</pre>
+                                <p class="dialogue assistant">Ejecuten este nuevo código. Vuelvan a empujar al robot <strong>suavemente</strong> con la misma fuerza de antes. Anoten sus observaciones: ¿Es más fácil o más difícil de desequilibrar ahora? ¿Por qué creen que pasa esto?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 3: Ciclo de Depuración - Error de Lógica ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Guía a los estudiantes a través de un error lógico común: olvidar el comando `stop()` entre movimientos.</p>
+                            <h3>Paso 3: Prueba con Altura Alta (Opcional) ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Si el tiempo lo permite, guía a los estudiantes a probar el escenario opuesto.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant"><strong>Problema:</strong> "El robot empieza a caminar en línea recta, pero cuando debería girar, ¡hace una curva extraña en lugar de un giro definido!"</p>
-                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "Parece que no se detiene por completo antes de intentar el siguiente movimiento."</p>
-                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> <strong>"Xolo, nuestro robot no hace giros bruscos, sino curvos. ¿Por qué?"</strong></p>
-                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Excelente observación lógica! Los comandos como <strong>`xgo.walk()`</strong> le dicen al robot 'empieza a moverte así'. Si le das otra instrucción de movimiento sin detenerlo, intentará mezclar ambas. Para giros precisos, necesitan una secuencia clara: <strong>`walk()`</strong>, <strong>`sleep()`</strong>, <strong>`stop()`</strong>, y luego el siguiente comando de movimiento. ¡El comando <strong>`xgo.stop()`</strong> es clave para rutas definidas!"</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Implementación del Desafío de Precisión ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 9) Anima a los equipos a intentar el desafío más complejo de su plan, aplicando sus nuevas habilidades de calibración.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora que son expertos en <strong>calibración</strong>, ¡vamos por el <strong>"Desafío de Precisión"</strong> de su plan! Intenten hacer que el robot vaya y vuelva al punto de partida. Apliquen lo que aprendieron sobre la <strong>calibración de los tiempos</strong> de giro y avance para que la ruta sea lo más <strong>exacta</strong> posible. Recuerden alternar quién programa para que todos tengan la oportunidad de calibrar el robot.</p>
+                                <p class="dialogue assistant">Si nos queda tiempo, ¡vamos al extremo! ¿Qué creen que pasará si subimos el <strong>centro de gravedad</strong>? Modifiquen el código y cambien <strong>`body_height(-30)`</strong> por <strong>`body_height(20)`</strong>. Predigan el resultado y luego hagan la prueba. ¿Fue más fácil o más difícil de desequilibrar? ¡Esto demuestra la importancia de la física en la robótica!</p>
                             </div>
                         </div>
                     </div>
@@ -246,30 +241,30 @@
             </div>
 
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: GNIUS STORM Y REINICIO DEL CICLO ⏰ 10 minutos</h2>
-                <p><strong>Propósito</strong> Celebrar los logros en calibración, compartir aprendizajes clave y fomentar la mentalidad de mejora continua.</p>
+                <h2>⚡ Actividad 4: GNIUS STORM Y ANÁLISIS DE RESULTADOS ⏰ 10 minutos</h2>
+                <p><strong>Propósito</strong> Celebrar los descubrimientos, compartir los resultados del experimento y conectar las observaciones con los conceptos teóricos.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Gnius STORM ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) Facilita un espacio para que los equipos muestren sus rutas calibradas y compartan sus descubrimientos.</p>
+                            <h3>Paso 1: Gnius STORM - Compartir Hallazgos ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Facilita un espacio para que los equipos compartan los resultados de su experimento.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Tiempo de <strong>Gnius STORM</strong>! Cada equipo, prepárese para mostrar la ruta que lograron <strong>calibrar mejor</strong>. ¡Queremos ver esos "cuadrados perfectos" o esos "zigzags precisos"! Y lo más importante, compartan un <strong>aprendizaje clave de calibración</strong>: "Descubrimos que para girar 90 grados a una velocidad de -30, necesitábamos un `time.sleep` de exactamente 1.6 segundos." o "Al principio se nos olvidaba `xgo.stop()` entre movimientos y el robot hacía curvas."</p>
+                                <p class="dialogue assistant">¡Tiempo de <strong>Gnius STORM</strong>! Cada equipo, prepárese para compartir sus conclusiones. La pregunta es: ¿Cómo afectó la <strong>altura del cuerpo</strong> a la <strong>estabilidad</strong> del robot? Usen los conceptos que aprendimos, como <strong>centro de gravedad</strong> y <strong>balance dinámico</strong>, para explicar sus resultados. ¿Sus observaciones confirmaron la teoría?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Celebración de la Calibración ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 11) Lanza un mini-desafío para aplicar las habilidades de calibración en un nuevo problema.</p>
+                            <h3>Paso 2: Conexión con la IA Reactiva ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Concluye la actividad conectando los autoajustes del robot con el concepto de IA.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Excelente trabajo, ingenieros! Han <strong>calibrado</strong> sus robots. Para cerrar, compartan en equipos: ¿cuál fue el <strong>ajuste más difícil</strong> que lograron hacer para que su ruta fuera precisa? ¡Celebremos esos descubrimientos y la paciencia que tuvieron para lograrlos!</p>
+                                <p class="dialogue assistant">¡Excelente trabajo, científicos! Lo que vieron hoy, esos pequeños y rápidos ajustes que el robot hacía por sí solo para no caerse, es un ejemplo perfecto de <strong>IA reactiva</strong>. No estaba pensando ni planeando, simplemente estaba <strong>reaccionando</strong> a los datos de sus sensores en tiempo real para cumplir un objetivo: mantenerse en pie. ¡Han experimentado con una de las formas más fundamentales de la inteligencia artificial!</p>
                             </div>
                         </div>
                     </div>
